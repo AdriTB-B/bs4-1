@@ -6,11 +6,10 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource("application-miconfiguracion.properties")
-public class Configuracion {
+public class MiConfiguracion {
     private final String valor1;
-
     private final String valor2;
-    Configuracion(
+    MiConfiguracion(
             @Value("${valor1}") String valor1,
             @Value("${valor2}") String valor2
     ){
